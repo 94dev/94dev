@@ -1,6 +1,7 @@
 (function($) {
 	"use strict"
 
+	console.log("💕 JS? Drop us your resume at naseef@94dev.xyz")
 	///////////////////////////
 	// Preloader
 	$(window).on('load', function() {
