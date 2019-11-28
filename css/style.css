@@ -188,7 +188,7 @@ ul, ol {
     top: 0;
     right: 0;
     bottom: 0;
-    opacity: .8;
+    opacity: .7;
     background: #1C1D21;
 }
 
@@ -1478,7 +1478,7 @@ header {
 }
 
 .footer-logo>a>img {
-    max-height: 80px;
+    max-height: 100px;
 }
 
 .footer-follow {
