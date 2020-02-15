@@ -155,48 +155,11 @@
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
-						<i class="fa fa-cogs"></i>
+						<i class="fa fa-code"></i>
 						<h3>Web Development</h3>
 						<p>94DEV are all about web development. We challenge to deliver highly functional web apps with responsive
 							UI/UX.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-magic"></i>
-						<h3>Web Design</h3>
-						<p>94DEV are passionate about design. Create a stunning website for your busines and stand out from your
-							competitors.</p>
-					</div>
-				</div>
-				<!-- /about -->
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-shopping-cart"></i>
-						<h3>E-Commerce Development</h3>
-						<p>Reach your customers online with 94DEV's specialized marketing technologies and SEO.</p>
-						<a href="#">Read more</a>
-					</div>
-				</div>
-				<!-- /about -->
-
-			</div>
-
-			<div class="row">
-
-				<!-- about -->
-				<div class="col-md-4">
-					<div class="about">
-						<i class="fa fa-mobile"></i>
-						<h3>Mobile App Development</h3>
-						<p>94DEV develop feature rich visibly appealing mobile apps and PWAs.</p>
-						<a href="#">Read more</a>
+						<!-- <a href="#">Read more</a> -->
 					</div>
 				</div>
 				<!-- /about -->
@@ -215,10 +178,43 @@
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
+						<i class="fa fa-cogs"></i>
+						<h3>Scripting & Automation</h3>
+						<p>Web automation, CICD, AWS Cloud Formation scripts, Docker scripts, Testing scripts, etc.. 94DEV got you
+							covered.</p>
+						<!-- <a href="#">Read more</a> -->
+					</div>
+				</div>
+				<!-- /about -->
+
+			</div>
+
+			<div class="row">
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-mobile"></i>
+						<h3>Mobile App Development</h3>
+						<p>94DEV develop feature rich visibly appealing mobile apps and PWAs.</p>
+						<br>
+
+						<!-- <a href="#">Read more</a> -->
+					</div>
+				</div>
+				<!-- /about -->
+
+
+				<!-- /about -->
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
 						<i class="fa fa-desktop"></i>
-						<h3>Desktop Applications</h3>
+						<h3>Desktop App Development</h3>
 						<p>94DEV develop Electron.js based crossplatform desktop apps.</p>
-						<a href="#">Read more</a>
+						<br>
+
 					</div>
 				</div>
 				<!-- /about -->
@@ -226,16 +222,41 @@
 				<!-- about -->
 				<div class="col-md-4">
 					<div class="about">
-						<i class="fa fa-server"></i>
-						<h3>Anything New and Cool</h3>
-						<p>Our creative motivated team is very addeptive to new technologies.</p>
-						<a href="#">Read more</a>
+						<i class="fa fa-shopping-cart"></i>
+						<h3>E-Commerce Development</h3>
+						<p>Reach your customers online with 94DEV's specialized marketing technologies and SEO.</p>
+						<!-- <a href="#">Read more</a> -->
 					</div>
 				</div>
+
 				<!-- /about -->
 
 			</div>
 			<!-- /Row -->
+			<div class="row">
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-microchip"></i>
+						<h3>IoT</h3>
+						<p>94DEV are here to help you connect your devices to the real world, making them Smart and create new value
+							for your business..</p>
+
+						<!-- <a href="#">Read more</a> -->
+					</div>
+				</div>
+
+				<!-- about -->
+				<div class="col-md-4">
+					<div class="about">
+						<i class="fa fa-server"></i>
+						<h3>Anything New and Cool</h3>
+						<p>Our creative motivated team is very addeptive to new technologies.</p>
+						<br><br>
+						<!-- <a href="#">Read more</a> -->
+					</div>
+				</div>
+			</div>
 
 		</div>
 		<!-- /Container -->
@@ -397,6 +418,17 @@
 					</div>
 				</div>
 				<!-- /number -->
+
+				<!-- number -->
+				<div class="col-sm-2 col-xs-6">
+					<div class="number">
+						<!-- <i class="fa fa-users"></i> -->
+						<img class="what-we-use" alt="gcp" src="https://cdn.svgporn.com/logos/docker-icon.svg	" />
+						<h4 class="white-text"><span class="counter">Docker</span></h4>
+						<!-- <span class="white-text">JS</span> -->
+					</div>
+				</div>
+				<!-- /number -->
 			</div>
 			<!-- /Row -->
 
@@ -486,8 +518,14 @@
 	<!-- /Why Choose Us -->
 
 	<!-- Maps -->
-	<div id="map"></div>
-	<!-- /Maps -->
+	<div id="map"> -->
+
+
+
+
+	</div>
+
+
 
 	<!-- Contact -->
 	<div id="contact" class="section md-padding">
@@ -540,13 +578,14 @@
 
 				<!-- contact form -->
 				<div class="col-md-8 col-md-offset-2">
-					<form class="contact-form">
-						<input type="text" id="name" class="input" placeholder="Name">
+					<form class="contact-form" action="https://formspree.io/mnqdrkea" method="POST">
+						<input type="text" id="name" class="input" placeholder="Name" name="name">
 						<input type="text" id="phone" class="input" placeholder="Phone">
-						<input type="email" id="email" class="input" placeholder="Email">
+						<input type="email" id="email" class="input" placeholder="Email" name="_replyto">
 						<input type="text" id="subject" class="input" placeholder="Subject">
 						<textarea class="input" id="message" placeholder="Message"></textarea>
-						<div id="contactUs" class="main-btn">Send message</div>
+						<!-- <div id="contactUs" class="main-btn">Send message</div> -->
+						<input type="submit" class="main-btn" value="Send">
 						<br />
 						<br />
 						<div id="succ-msg" style="display: none" class="text-center">Your message sent succesfully!</div>
@@ -588,7 +627,8 @@
 
 					<!-- footer follow -->
 					<ul class="footer-follow">
-						<li><a target="_blank" href="https://www.linkedin.com/company/94dev"><i class="fa fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://www.linkedin.com/company/94dev"><i class="fa fa-linkedin"></i></a>
+						</li>
 						<li><a target="_blank" href="https://github.com/94dev"><i class="fa fa-github"></i></a></li>
 						<li><a target="_blank" href="https://www.facebook.com/94dev"><i class="fa fa-facebook"></i></a></li>
 						<!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
