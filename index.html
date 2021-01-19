@@ -51,8 +51,14 @@
     <!-- Font Awesome Icon -->
     <link rel="stylesheet" href="css/font-awesome.min.css" />
 
+    <!-- team Link -->
+    <link rel="stylesheet" href="css/team.css">
+    <!-- product Link -->
+    <link rel="stylesheet" href="css/product.css">
     <!-- Custom stlylesheet -->
     <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <!-- media Query -->
+    <link rel="stylesheet" href="css/media_queries.css">
 
     <link rel="icon" href="img/Favicon.ico" type="image/x-icon" />
 
@@ -99,6 +105,7 @@
           <!--  Main navigation  -->
           <ul class="main-nav nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#product">Products</a></li> -->
             <li><a href="#service">Services</a></li>
             <!-- <li><a href="#portfolio">Portfolio</a></li> -->
             <li><a href="#tech">Tech</a></li>
@@ -119,20 +126,76 @@
 
       <!-- home wrapper -->
       <div class="home-wrapper">
-        <div class="container">
-          <div class="row">
+        <div class="container-fluid">
+          <div class="row moto">
             <!-- home content -->
-            <div class="col-md-10 col-md-offset-1">
-              <div class="home-content">
-                <h1 class="white-text">94dev - We are just a creative team</h1>
+            
+            <div class="col-md-6 ">
+              <div class="motoConatiner">
+                <h1 class="white-text">Building Smart Solutions</h1>
                 <p class="white-text">
                   Also, we are very picky about what we do.
                 </p>
-                <!-- <button class="white-btn">Get In Touch!</button> -->
-                <a href="#contact">
-                  <button class="main-btn">Get In Touch!</button>
-                </a>
+              </div>            
+            </div>
+       
+            <div class="col-md-6">
+              <div class="col-md-8 col-md-offset-2">
+                <form
+                  class="contact-form"                 
+                  action="https://formspree.io/mnqdrkea"
+                  name="myForm"
+                  id="myForm"
+                  method="POST"
+                >
+                  <input
+                
+                    type="text"
+                    id="name"
+                    class="input"
+                    placeholder="Name"
+                    name="name"
+                  />
+                  <input
+                    type="text"
+                    id="phone"
+                    class="input"
+                    placeholder="Phone (+11231231234)"
+                    name="phpneNo"
+                  />
+                  <input
+                    type="email"
+                    id="email"
+                    class="input"
+                    placeholder="Email"
+                    name="_replyto"
+                  />
+                  <input
+                    type="text"
+                    id="subject"
+                    class="input"
+                    placeholder="Subject"
+                    name="subject"
+                  />
+                  <textarea
+                    class="input"
+                    id="message"
+                    placeholder="Message"
+                    name="message"
+                  ></textarea>
+                  <!-- <div id="contactUs" class="main-btn">Send message</div> -->
+                  <input type="button" class="main-btn" value="Get in Touch" id="sendme"  />
+                  <br />
+                  <br />
+                  <div id="succ-msg" style="display: none" class="text-center">
+                    Your message sent succesfully!
+                  </div>
+                  <div id="err-msg" style="display: none" class="text-center">
+                    Error in sending your message. Reach us at naseef@94dev.xyz
+                  </div>
+                </form>
               </div>
+    
             </div>
             <!-- /home content -->
           </div>
@@ -141,6 +204,95 @@
       <!-- /home wrapper -->
     </header>
     <!-- /Header -->
+
+   <!-- Our Product -->
+   <div id="product" class=" ">
+    <!-- Container -->
+    <!-- <div class="container md-padding">
+      <div class="row" >
+      
+        <div class="section-header text-center">
+          <h2 class="title">Our Products</h2>
+        </div>
+      
+        <div class="row gridRow">
+          <div class="topBanner">
+            <div class="col-md-6 gridHalf">
+              <div class="row gridRow">
+                <div class="col-md-12 gridCOl">
+                  <div class="peroity1 ">                
+                  <div class="onshow">   
+                      <div class="onshow_Btn"><div class="productSendbtn">Show me</div></div>                     
+                    <h3 class="product_name">Clipboard2</h3>
+                    <span class="onshow_discription">Clip Board 2 desktop application to manage copy text date and it's easy to use with your fingure tips</span>
+                  </div>
+                
+
+                </div>
+              </div>
+
+
+
+              </div>
+            </div>
+            <div class="col-md-6 gridHalf">
+              <div class="row gridRow">
+                <div class="col-md-12 gridCOl">
+                  <div class="peroity2 ">
+                    
+                    <div class="onshow">                      
+                      <div class="onshow_Btn"><div class="productSendbtn">Show me</div></div>                     
+                    <h3 class="product_name">page2pdf</h3>
+                    <span class="onshow_discription">Clip Board 2 desktop application to manage copy text date and it's easy to use with your fingure tips</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gridRow">
+                <div class="col-md-7 gridCOl" style="margin:0;">
+                  <div class="peroity3">
+                  
+                     <div class="onshow">                      
+                      <div class="onshow_Btn"><div class="productSendbtn">Show me</div></div>                     
+                    <h3 class="product_name">CaptchaCreaker</h3>
+                    <span class="onshow_discription">Clip Board 2 desktop application to manage copy text date and it's easy to use with your fingure tips</span>
+                  </div>
+            
+                 </div>
+               
+                </div>
+                <div class="col-md-5 gridCOl">
+                  <div class="peroity4">
+                 
+                    <div class="onshow">                      
+                      <div class="onshow_Btn"><div class="productSendbtn">Show me</div></div>                     
+                    <h3 class="product_name">Browser Bird</h3>
+                    <span class="onshow_discription">Clip Board 2 desktop application to manage copy text date and it's easy to use with your fingure tips</span>
+                  </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="bottomBanner">
+            <div class="col-md-12 gridCOl">
+              <div class="peroity5 gridCOl">
+            
+                <div class="onshow">                      
+                    <div class="onshow_Btn"><div class="productSendbtn">Show me</div></div>                     
+                  <h3 class="product_name">The Menu Cards</h3>
+                  <span class="onshow_discription">Clip Board 2 desktop application to manage copy text date and it's easy to use with your fingure tips</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+        </div></div>
+    </div> -->
+     <!-- /Our Product -->
 
     <!-- About -->
     <div id="service" class="section md-padding">
@@ -152,125 +304,7 @@
             <h2 class="title">What we do!</h2>
           </div>
           <!-- /Section header -->
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-code"></i>
-              <h3>Web Development</h3>
-              <p>
-                94DEV are all about web development. We challenge to deliver
-                highly functional web apps with responsive UI/UX.
-              </p>
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-          <!-- /about -->
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-cloud"></i>
-              <h3>Cloud Architecting</h3>
-              <p>
-                94DEV are specialists in cloud computing with expertise
-                knowledge in AWS, GCP, Heroku etc..
-              </p>
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-          <!-- /about -->
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-cogs"></i>
-              <h3>Scripting & Automation</h3>
-              <p>
-                Web automation, CICD, AWS Cloud Formation scripts, Docker
-                scripts, Testing scripts, etc.. 94DEV got you covered.
-              </p>
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-          <!-- /about -->
-        </div>
-
-        <div class="row">
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-mobile"></i>
-              <h3>Mobile App Development</h3>
-              <p>
-                94DEV develop feature rich visibly appealing mobile apps and
-                PWAs.
-              </p>
-              <br />
-
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-          <!-- /about -->
-
-          <!-- /about -->
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-desktop"></i>
-              <h3>Desktop App Development</h3>
-              <p>94DEV develop Electron.js based crossplatform desktop apps.</p>
-              <br />
-            </div>
-          </div>
-          <!-- /about -->
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-shopping-cart"></i>
-              <h3>E-Commerce Development</h3>
-              <p>
-                Reach your customers online with 94DEV's specialized marketing
-                technologies and SEO.
-              </p>
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-
-          <!-- /about -->
-        </div>
-        <!-- /Row -->
-        <div class="row">
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-microchip"></i>
-              <h3>IoT</h3>
-              <p>
-                94DEV are here to help you connect your devices to the real
-                world, making them Smart and create new value for your
-                business..
-              </p>
-
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
-
-          <!-- about -->
-          <div class="col-md-4">
-            <div class="about">
-              <i class="fa fa-server"></i>
-              <h3>Anything New and Cool</h3>
-              <p>
-                Our creative motivated team is very addeptive to new
-                technologies.
-              </p>
-              <br /><br />
-              <!-- <a href="#">Read more</a> -->
-            </div>
-          </div>
+          <div class="row serviceContainer"></div>         
         </div>
       </div>
       <!-- /Container -->
@@ -282,218 +316,21 @@
       <!-- Background Image -->
       <div
         class="bg-img"
-        style="background-image: url('./img/background2.jpg')"
+        style="background-image: url('https://thumbs.dreamstime.com/b/abstract-futuristic-digital-technology-background-illustration-vector-innovation-66980091.jpg')"
       >
         <div class="overlay"></div>
       </div>
       <!-- /Background Image -->
-
       <!-- Container -->
       <div class="container">
         <!-- Row -->
-        <div class="row">
+        <div class="row techContainer">
           <!-- Section header -->
           <div class="section-header text-center">
             <h2 class="title white-text">What we use!</h2>
           </div>
           <!-- /Section header -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="JS"
-                src="https://cdn.svgporn.com/logos/javascript.svg"
-              />
-              <h4 class="white-text"><span class="counter">JS</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="Node.js"
-                src="https://cdn.svgporn.com/logos/nodejs-icon.svg"
-              />
-              <h4 class="white-text"><span class="counter">Node.js</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="React.js"
-                src="https://cdn.svgporn.com/logos/react.svg"
-              />
-              <h4 class="white-text"><span class="counter">React.js</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="serverless"
-                src="https://cdn.svgporn.com/logos/serverless.svg"
-              />
-              <h4 class="white-text">
-                <span class="counter">Serverless</span>
-              </h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="puppeteer"
-                src="https://cdn.svgporn.com/logos/puppeteer.svg"
-              />
-              <h4 class="white-text"><span class="counter">Puppeteer</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="pwa"
-                src="https://cdn-images-1.medium.com/max/1600/1*GwBZgjItyjEwaaZn-lxTTA.png"
-              />
-              <h4 class="white-text"><span class="counter">PWA</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="mongodb"
-                src="https://cdn.svgporn.com/logos/mongodb.svg"
-              />
-              <h4 class="white-text"><span class="counter">MongoDB</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="mysql"
-                src="https://cdn.svgporn.com/logos/mysql.svg"
-              />
-              <h4 class="white-text"><span class="counter">SQL</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="graphQL"
-                src="https://cdn.svgporn.com/logos/graphql.svg"
-              />
-              <h4 class="white-text"><span class="counter">GraphQL</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="aws"
-                src="https://cdn.svgporn.com/logos/aws.svg"
-              />
-              <h4 class="white-text"><span class="counter">AWS</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="firebase"
-                src="https://cdn.svgporn.com/logos/firebase.svg"
-              />
-              <h4 class="white-text"><span class="counter">Firebase</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="gcp"
-                src="https://cdn.svgporn.com/logos/google-cloud-platform.svg	"
-              />
-              <h4 class="white-text"><span class="counter">GCP</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
-
-          <!-- number -->
-          <div class="col-sm-2 col-xs-6">
-            <div class="number">
-              <!-- <i class="fa fa-users"></i> -->
-              <img
-                class="what-we-use"
-                alt="gcp"
-                src="https://cdn.svgporn.com/logos/docker-icon.svg	"
-              />
-              <h4 class="white-text"><span class="counter">Docker</span></h4>
-              <!-- <span class="white-text">JS</span> -->
-            </div>
-          </div>
-          <!-- /number -->
+          <div class="techContainer"></div>       
         </div>
         <!-- /Row -->
       </div>
@@ -512,88 +349,46 @@
             <div class="section-header">
               <h2 class="title">Why Choose Us</h2>
             </div>
-            <div class="row">
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">Space-age tech</h3>
-                <p>
-                  Modern JS frameworks, Serverless, GraphQL, TDD, clean code
-                  etc.. You will find us well informed with time than our
-                  competitors. And that's our edge.
-                </p>
-              </div>
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">We are punctual</h3>
-                <p>
-                  We provide possible estimates and we keep them. We respect
-                  time. Both our's and others'.
-                </p>
-              </div>
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">We are responsible</h3>
-                <p>
-                  We believe in being honest, transparent with constant
-                  communication all the way through. We believe in long-term
-                  relationships.
-                </p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">We are picky</h3>
-                <p>
-                  We are picky about what we do. We don't just pick another
-                  project. Unless we are convinced.
-                </p>
-              </div>
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">We have magic</h3>
-                <p>
-                  Right people with right attitude equipped with skills of the
-                  time are rare. That's the magic we have.
-                </p>
-              </div>
-              <div class="feature col-md-4">
-                <!-- <i class="fa fa-check"></i> -->
-                <h3 class="title">We are friendly</h3>
-                <p>
-                  We are devs, not computers. We are always aware of the human
-                  part first and then the professional relationships that we
-                  develop. So, we do our best to make it an enjoyable and
-                  comfortable association for both us and the clients.
-                </p>
-              </div>
-            </div>
+            <div class="row whyUsContainer"></div>
           </div>
 
           <!-- /why choose us content -->
 
-          <!-- About slider -->
-          <!-- <div class="col-md-6">
-					<div id="about-slider" class="owl-carousel owl-theme">
-						<img class="img-responsive" src="./img/about1.jpg" alt="">
-						<img class="img-responsive" src="./img/about2.jpg" alt="">
-						<img class="img-responsive" src="./img/about1.jpg" alt="">
-						<img class="img-responsive" src="./img/about2.jpg" alt="">
-					</div>
-				</div> -->
-          <!-- /About slider -->
+         
         </div>
         <!-- /Row -->
       </div>
       <!-- /Container -->
     </div>
     <!-- /Why Choose Us -->
+    
+    
+        <!-- /Container -->
+  </div>
+  <!-- /Our Team -->
+  
+    <!-- Our Team -->
+    <!-- <div id="team" class=" ">
+    
+      <div class="container md-padding">
+        <div class="row" >
+         
+          <div class="section-header text-center">
+            <h2 class="title">Our Team</h2>
+          </div>
+         
+          <div class="row flex-row">
+           
+          </div></div>
+      </div>
+    
+</div> -->
 
     <!-- Maps -->
     <div id="_map"></div>
 
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1176.694316952413!2d80.44795058693205!3d7.25084090145606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc71a82618d2e5d37!2s94DEV%20-%20Building%20Smart%20Solutions!5e0!3m2!1sen!2slk!4v1601975574255!5m2!1sen!2slk"
+      src="https://www.google.com/maps/emb    <!-- <li><a href="#team">Team</a></li> -->ed?pb=!1m18!1m12!1m3!1d1176.694316952413!2d80.44795058693205!3d7.25084090145606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc71a82618d2e5d37!2s94DEV%20-%20Building%20Smart%20Solutions!5e0!3m2!1sen!2slk!4v1601975574255!5m2!1sen!2slk"
       height="450"
       frameborder="0"
       style="border: 0; width: 100%"
@@ -617,9 +412,12 @@
           <!-- contact -->
           <div class="col-sm-4">
             <div class="contact">
-              <i class="fa fa-phone"></i>
-              <h3>Phone</h3>
-              <p>+94 77 05 033 02</p>
+              <a href="tel:+94-35-224-8844">
+
+                <i class="fa fa-phone"></i>
+                <h3>Phone</h3>
+                <p><span>+94 (35) 224-8844</span>/ <br><span>+94 (77) 050-3302</span></p>
+              </a>
             </div>
           </div>
           <!-- /contact -->
@@ -627,9 +425,11 @@
           <!-- contact -->
           <div class="col-sm-4">
             <div class="contact">
-              <i class="fa fa-envelope"></i>
-              <h3>Email</h3>
-              <p>naseef@94dev.xyz</p>
+              <a href="mailto:naseef@94dev.xyz">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>naseef@94dev.xyz</p>
+              </a>
             </div>
           </div>
           <!-- /contact -->
@@ -637,70 +437,22 @@
           <!-- contact -->
           <div class="col-sm-4">
             <div class="contact">
-              <i class="fa fa-map-marker"></i>
-              <h3>Address</h3>
-              <p>
-                <span>94dev, Hassan Mawatha, Mawanella,</span>
-                <br />
-                <span>Sri Lanka</span>
-              </p>
+              <a href="http://maps.google.com/?q=1200 21/a Hassan Mawatha, Mawanella 71500">
+              
+                <i class="fa fa-map-marker"></i>
+                <h3>Address</h3>
+                <p>
+                  <span>94dev, Hassan Mawatha, Mawanella,</span>
+                  <br />
+                  <span>Sri Lanka</span>
+                </p>
+              </a>
             </div>
           </div>
           <!-- /contact -->
 
           <!-- contact form -->
-          <div class="col-md-8 col-md-offset-2">
-            <form
-              class="contact-form"
-              action="https://formspree.io/mnqdrkea"
-              method="POST"
-            >
-              <input
-                type="text"
-                id="name"
-                class="input"
-                placeholder="Name"
-                name="name"
-              />
-              <input
-                type="text"
-                id="phone"
-                class="input"
-                placeholder="Phone"
-                name="phpneNo"
-              />
-              <input
-                type="email"
-                id="email"
-                class="input"
-                placeholder="Email"
-                name="_replyto"
-              />
-              <input
-                type="text"
-                id="subject"
-                class="input"
-                placeholder="Subject"
-                name="subject"
-              />
-              <textarea
-                class="input"
-                id="message"
-                placeholder="Message"
-                name="message"
-              ></textarea>
-              <!-- <div id="contactUs" class="main-btn">Send message</div> -->
-              <input type="submit" class="main-btn" value="Send" />
-              <br />
-              <br />
-              <div id="succ-msg" style="display: none" class="text-center">
-                Your message sent succesfully!
-              </div>
-              <div id="err-msg" style="display: none" class="text-center">
-                Error in sending your message. Reach us at naseef@94dev.xyz
-              </div>
-            </form>
-          </div>
+      
 
           <!-- /contact form -->
         </div>
@@ -730,28 +482,45 @@
             <ul class="footer-follow">
               <li>
                 <a target="_blank" href="https://www.linkedin.com/company/94dev"
-                  ><i class="fa fa-linkedin"></i
-                ></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://github.com/94dev"
-                  ><i class="fa fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.facebook.com/94dev"
-                  ><i class="fa fa-facebook"></i
-                ></a>
-              </li>
-              <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
-              <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
-              <!-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a target="_blank" href="https://twitter.com/94Dev1"
+                  ><i class="fa fa-twitter"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a target="_blank" href="https://github.com/94dev"
+                    ><i class="fa fa-github"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a target="_blank" href="https://www.facebook.com/94dev"
+                      ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a target="_blank" href="https://www.youtube.com/channel/UCZQ4lUhCXDHEynQypODWe3g"
+                        ><i class="fa fa-youtube"></i
+                          ></a>
+                        </li>
+                        <!-- <li><a href="#"><i class="fa fa-google-plus"></i></a></li> -->
+                        <li><a target="_blank" href="https://www.instagram.com/94_dev/"><i class="fa fa-instagram"></i></a></li>
+                        <!-- <li><a href="#"><i class="fa fa-youtube"></i></a></li> -->
+                        <li>
+                          <a target="_blank" href="https://www.tiktok.com/@94dev_"
+                            >                 
+                            <span><img src="img/icons/tik-tok.png" width="15em" height="15em" alt=""></span>
+                          </a>
+                        </li>
             </ul>
             <!-- /footer follow -->
 
             <!-- footer copyright -->
+           
             <div class="footer-copyright">
-              <p>Copyright © 2019. All Rights Reserved</p>
+              <p id="copyright"></p>
             </div>
             <!-- /footer copyright -->
           </div>
@@ -763,9 +532,9 @@
     <!-- /Footer -->
 
     <!-- Back to top -->
-    <div id="back-to-top"></div>
+  
     <!-- /Back to top -->
-
+   
     <!-- Preloader -->
     <div id="preloader">
       <div class="preloader">
@@ -784,7 +553,11 @@
     <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
-
+  <script>
+    let date = new Date();
+    let getYear = date.getFullYear();
+    document.querySelector('#copyright').textContent=`Copyright © ${getYear}. All Rights Reserved`
+  </script>
   <script>
     var validateFields = () => {
       var name = document.getElementById("name");
@@ -913,6 +686,20 @@
       });
     }
   </script>
+
+
+  <script src="./js/team.js"></script>
+  <script src="./js/tech.js"></script>
+  <script src="./js/why.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/email.js"></script>
+
+
+
+  <script src="./js/facebook.js"></script>
+
+  
+  <!-- product.js -->
   <!-- <script
     async
     defer
